@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>24-Hour Clock</title>
+<style>
+  body { font-family: Arial; text-align: center; margin-top: 50px; }
+  #clock { font-size: 36px; }
+</style>
+</head>
+<body>
+<h1>24-Hour Clock</h1>
+<div id="clock"></div>
+<script>
+function updateClock() {
+  const now = new Date();
+  const time = [now.getHours(), now.getMinutes(), now.getSeconds()]
+               .map(t => t < 10 ? '0' + t : t)
+               .join(':');
+  document.getElementById('clock').textContent = time;
+  setTimeout(updateClock, 1000);
+}
+updateClock();
+</script>
+</body>
+</html>

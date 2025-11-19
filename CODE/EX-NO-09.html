@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        input, button {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Simple Calculator</h1>
+
+<input type="number" id="n1" placeholder="Enter first number">
+<input type="number" id="n2" placeholder="Enter second number">
+<br>
+
+<button onclick="calculate('+')">+</button>
+<button onclick="calculate('-')">-</button>
+<button onclick="calculate('*')">*</button>
+<button onclick="calculate('/')">/</button>
+<br>
+
+<input type="text" id="result" placeholder="Result" readonly>
+
+<script>
+function calculate(operation) {
+    const n1 = parseFloat(document.getElementById('n1').value);
+    const n2 = parseFloat(document.getElementById('n2').value);
+    let result;
+
+    if (isNaN(n1) || isNaN(n2)) {
+        result = "Invalid input";
+    } else {
+        switch (operation) {
+            case '+':
+                result = n1 + n2;
+                break;
+            case '-':
+                result = n1 - n2;
+                break;
+            case '*':
+                result = n1 * n2;
+                break;
+            case '/':
+                result = n2 !== 0 ? n1 / n2 : 'Cannot divide by zero';
+                break;
+            default:
+                result = "Unknown operation";
+        }
+    }
+
+    document.getElementById('result').value = result;
+}
+</script>
+
+</body>
+</html>
