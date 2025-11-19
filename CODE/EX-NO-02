@@ -4,7 +4,7 @@ EX.NO:02
 AIM:
   To design a HTML page to list the computer languages where each language is a link and to prepare 
   separate HTML documents for each language and call them in the appropriate link.
-PROCEDURE:
+ALGORITHM:
 1.	Start the notepad and write HTML document with <html> tag.
 2.	Create a head section using <head> tag and set a title using the <title> tag.
 3.	Start the body section using <body> tag.
