@@ -1,0 +1,47 @@
+                LAB EXERCISES
+EX.NO:07
+      JAVASCRIPT USER DEFINED OBJECTS AND MEDIA TAGS
+AIM:
+    To write a JavaScript program to control (play, pause, stop) the audio/video in a web page.
+ALGORITHM:
+    1.	Start the notepad and write HTML document with <html> tag.
+    2.	Create a head section using <head> tag and set a title using the <title> tag.
+    3.	Start the body section using <body> tag.
+    4.	Insert an <audio> and <video> element.
+    5.	Add control buttons (Play, Pause, Stop) using <button> elements.
+    6.	Write JavaScript functions to control the media and Link buttons with onclick.
+    7.  Save the file and test the page in a browser to verify the controls work.
+PROGRAM:
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Media Player</title>
+    </head>
+    <body>
+    <h2>Audio Player</h2>
+    <audio id="audioPlayer" src="audiofile.mp3"></audio><br>
+    <button onclick="audioPlayer.play()">Play</button>
+    <button onclick="audioPlayer.pause()">Pause</button>
+    <button onclick="audioPlayerStop()">Stop</button>
+    <h2>Video Player</h2>
+    <video id="videoPlayer" width="480" src="videofile.mp4"></video><br>
+    <button onclick="videoPlayer.play()">Play</button>
+    <button onclick="videoPlayer.pause()">Pause</button>
+    <button onclick="videoPlayerStop()">Stop</button>
+    <script>
+    function audioPlayerStop() {
+    const audio = document.getElementById('audioPlayer');
+    audio.pause();
+    audio.currentTime = 0;
+    }
+    function videoPlayerStop() {
+    const video = document.getElementById('videoPlayer');
+    video.pause();
+    video.currentTime = 0;
+    }
+    </script>
+    </body>
+    </html>
+RESULT:
+    Thus the above HTML Code is executed and the output is obtained.
