@@ -1,0 +1,72 @@
+                    LAB EXERCISES
+EX.NO:05
+                EXTERNAL STYLE SHEETS
+AIM:
+   To design a webpage of your college with attractive background color, text-color, font-face, an image by using external CSS formatting.
+PROCEDURE:
+1.	Start the notepad and write HTML document with <html> tag.
+2.	Create a head section using <head> tag and set a title using the <title> tag.
+3.	Start the body section using <body> tag.
+4.	Create style.css for styling.
+5.  Set background-color, color, and font-family.
+6.  Style images with width, border, or margin.
+7.  Add a heading for the college name.
+8.  Add a short description using <p> or <div>.
+9.  Insert a college image with <img>.
+10. Save both files in the same folder and open HTML in a browser.
+PROGRAM:
+EX-NO-05.html:
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <title>College Webpage</title>
+  <link rel="stylesheet" href="EX-NO-05.css">
+  </head>
+  <body>
+  <header>
+  <h1>Welcome to XXX Polytechnic College</h1>
+  </header>
+  <main>
+  <section id="about">
+  <h2>About Us</h2>
+  <p>
+  XXX Polytechnic College is a prestigious institution offering a variety of courses and programs. 
+  Our vision is to impart quality education, skills, and attributes based on continuously changing global standards and local industrial requirements.
+  </p>
+  <img src="college.jpg" alt="College">
+  </section>
+  </main>
+  <footer>
+  <p>&copy; 2024 XXX Polytechnic College. All rights reserved.</p>
+  </footer>
+  </body>
+  </html>
+EX-NO-05.css:
+  body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f9f9f9;
+  margin: 20px;
+  }
+  table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  border: 2px solid #004080;
+  }
+  th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1.5px solid #004080;
+  }
+  th {
+  background-color: #004080;
+  color: white;
+  }
+  tr:nth-child(even) {
+  background-color: #f2f2f2;
+  }
+RESULT:
+    Thus the above HTML Code is executed and the output is obtained.
