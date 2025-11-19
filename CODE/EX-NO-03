@@ -3,7 +3,7 @@ EX.NO:03
                   IMAGES AND LINKS TAGS
 AIM:
   To write a HTML program to display the image of a computer as a link to the web page describing the components of computers.
-PROCEDURE:
+ALGORITHM:
     1.	Start the notepad and write HTML document with <html> tag.
     2.	Create a head section using <head> tag and set a title using the <title> tag.
     3.	Start the body section using <body> tag.
