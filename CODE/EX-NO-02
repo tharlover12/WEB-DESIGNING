@@ -1,0 +1,117 @@
+                      LAB EXERCISES
+EX.NO:02
+                      LISTS AND LINKS
+AIM:
+  To design a HTML page to list the computer languages where each language is a link and to prepare 
+  separate HTML documents for each language and call them in the appropriate link.
+PROCEDURE:
+1.	Start the notepad and write HTML document with <html> tag.
+2.	Create a head section using <head> tag and set a title using the <title> tag.
+3.	Start the body section using <body> tag.
+4.	Inside the <body>, create a heading using <h1> or <h2> to describe the page.
+5.	Create a list of computer languages using <ul> (unordered list) and add each item with the <li> tag.
+6.  Convert each list item into a hyperlink by using the <a href="filename.html"> tag that links to its respective language page.
+7.  Prepare a separate HTML file for each language (example: html.html, css.html, python.html), containing a heading and a short description.
+8.  Add a “Back to list” link in each language file using <a href="EX-NO-02.html"> to return to the main page.
+9.  Save all the HTML files with proper names and keep them in the same folder for the links to work correctly.
+10. Open EX-NO-02.html in a web browser and click each link to check that all pages open and navigate properly.
+PROGRAM:  
+  EX-NO-02.html:
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <title>Computer Languages</title>
+  </head>
+  <body>
+  <h1>List of Computer Languages</h1>
+  <ul>
+  <li><a href="html.html">HTML</a></li>
+  <li><a href="css.html">CSS</a></li>
+  <li><a href="javascript.html">JavaScript</a></li>
+  <li><a href="python.html">Python</a></li>
+  <li><a href="java.html">Java</a></li>
+  <li><a href="cplus.html">C++</a></li>
+  </ul>
+  </body>
+  </html>
+  Html.html:
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <title>HTML</title>
+  </head>
+  <body>
+  <h1>HTML (HyperText Markup Language)</h1>
+  <p>HTML is the standard markup language for creating web pages.</p>
+  <p><a href="EX-NO-02.html">Back to list</a></p>
+  </body>
+  </html>
+  Css.html:
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <title>CSS</title>
+  </head>
+  <body>
+  <h1>CSS (Cascading Style Sheets)</h1>
+  <p>CSS is a style sheet language. It describes the presentation of a document written in a markup language like HTML.</p>
+  <p><a href="EX-NO-02.html">Back to list</a></p>
+  </body>
+  </html>
+  Javascript.html:
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <title>JavaScript</title>
+  </head>
+  <body>
+  <h1>JavaScript</h1>
+  <p>JavaScript is a programming language commonly used to create interactive effects within web browsers.</p>
+  <p><a href="EX-NO-02.html">Back to list</a></p>
+  </body>
+  </html>
+  Python.html:
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <title>Python</title>
+  </head>
+  <body>
+  <h1>Python</h1>
+  <p>Python is a high-level, interpreted, general-purpose programming language.</p>
+  <p><a href="EX-NO-02.html">Back to list</a></p>
+  </body>
+  </html>
+  Java.html:
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <title>Java</title>
+  </head>
+  <body>
+  <h1>Java</h1>
+  <p>Java is a high-level, class-based, object-oriented programming language.</p>
+  <p><a href="EX-NO-02.html">Back to list</a></p>
+  </body>
+  </html>
+  Cplus.html:
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <title>C++</title>
+  </head>
+  <body>
+  <h1>C++</h1>
+  <p>C++ is a general-purpose programming language. It is an extension of the C programming language.</p>
+  <p><a href="EX-NO-02.html">Back to list</a></p>
+  </body>
+  </html>
+RESULT:
+    Thus the above HTML Code is executed and the output is obtained.
